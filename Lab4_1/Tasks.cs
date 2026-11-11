@@ -175,26 +175,8 @@ namespace Lab4
             Console.WriteLine();
         }
 
-        // Проверка имени и фамилии
-        private static bool IsValidName(string value, int maxLength)
-        {
-            if (string.IsNullOrWhiteSpace(value) || value.Length > maxLength)
-            {
-                return false;
-            }
-
-            for (int i = 0; i < value.Length; i++)
-            {
-                if (char.IsLetter(value[i]) == false)
-                {
-                    return false;
-                }
-            }
-
-            return true;
-        }
-
-        // Заполнение файла данными об учениках
+        // 5 задание файл
+        
         public static void FillStudentsFile(Checked check)
         {
             int n = check.NaturalReadInt("Введите количество учеников (не более 100):");
@@ -213,7 +195,7 @@ namespace Lab4
 
                     string surname = check.ReadString("Введите фамилию:");
 
-                    while (IsValidName(surname, 20) == false)
+                    while (Checked.IsValidName(surname, 20) == false)
                     {
                         Console.WriteLine("Некорректная фамилия. Введите только буквы (до 20 символов).");
                         surname = check.ReadString("Введите фамилию:");
@@ -221,7 +203,7 @@ namespace Lab4
 
                     string name = check.ReadString("Введите имя:");
 
-                    while (IsValidName(name, 15) == false)
+                    while (Checked.IsValidName(name, 15) == false)
                     {
                         Console.WriteLine("Некорректное имя. Введите только буквы (до 15 символов).");
                         name = check.ReadString("Введите имя:");
