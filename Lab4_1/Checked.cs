@@ -157,4 +157,25 @@ public class Checked
         }
         return value;
     }
+
+
+    // Проверка имени и фамилии для 5 задания 
+    internal static bool IsValidName(string value, int maxLength) 
+    {
+        if (string.IsNullOrWhiteSpace(value) 
+            || value.Length > maxLength)
+        {
+            return false;
+        }
+
+        for (int i = 0; i < value.Length; i++)
+        {
+            if (char.IsLetter(value[i]) == false)
+            {
+                return false;
+            }
+        }
+
+        return true;
+    }
 }
