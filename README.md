@@ -88,7 +88,7 @@
 ### Тестирование
 
 <img width="307" height="704" alt="image" src="https://github.com/user-attachments/assets/a4ebd21a-f773-4f35-9699-2d14d494903d" />
-![Uploading image.png…]()
+<img width="202" height="204" alt="image" src="https://github.com/user-attachments/assets/99c1507e-6c7c-4169-9808-928a3e4206b4" />
 
 
 ## Задание 6. Класс Time + перегрузка оператора
@@ -105,4 +105,5 @@
 
 ### Тестирование
 
-Конструктор и оператор `+` работают корректно, в том числе при переходе через сутки. Ввод часов и минут проверяется на допустимый диапазон.
+<img width="371" height="558" alt="image" src="https://github.com/user-attachments/assets/0e22c78a-2ebc-40aa-96c9-b3bbcd853524" />
+![Uploading image.png…]()
