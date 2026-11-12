@@ -7,7 +7,6 @@ internal class Tasks
     
     public static void Task6(Checked check)
     {
-        // Ввод часов
         int hours;
 
         do
@@ -16,7 +15,6 @@ internal class Tasks
         }
         while (hours < 0 || hours > 23);
 
-        // Ввод минут
         int minutes;
 
         do
@@ -25,10 +23,8 @@ internal class Tasks
         }
         while (minutes < 0 || minutes > 59);
 
-        // Создание объекта времени
         Time time = new Time((byte)hours, (byte)minutes);
 
-        // Ввод количества минут для добавления
         int addMinutes;
 
         do
@@ -37,7 +33,6 @@ internal class Tasks
         }
         while (addMinutes < 0);
 
-        // Добавление минут
         Time result = time + (uint)addMinutes;
 
         Console.WriteLine("Исходное время: " + time);
