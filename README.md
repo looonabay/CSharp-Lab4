@@ -15,7 +15,11 @@
 
 ### Тестирование
 
-Программа корректно удаляет все вхождения заданного элемента. При отсутствии элемента список остаётся без изменений. Проверка ввода реализована через класс `Checked`.
+<img width="624" height="856" alt="image" src="https://github.com/user-attachments/assets/7ece99c0-db72-42b0-a186-8d053ec5722f" />
+
+<img width="457" height="279" alt="image" src="https://github.com/user-attachments/assets/e1517f47-3148-4ff7-bb53-d1288d7f073c" />
+
+
 
 ## Задание 2. LinkedList
 
@@ -29,7 +33,9 @@
 
 ### Тестирование
 
-Список успешно выводится в обратном порядке. Работает корректно при любом количестве элементов (больше 0).
+<img width="306" height="341" alt="image" src="https://github.com/user-attachments/assets/d58cc948-693c-40e5-bc38-646ead2353d2" />
+<img width="459" height="226" alt="image" src="https://github.com/user-attachments/assets/9b7ab25f-530c-4a2a-a27b-4d2b747356c9" />
+
 
 ## Задание 3. HashSet
 
@@ -46,7 +52,11 @@
 
 ### Тестирование
 
-Программа правильно определяет три категории фирм. Есть проверка, что выбранная школой фирма существует в общем списке.
+<img width="333" height="670" alt="image" src="https://github.com/user-attachments/assets/8b3189f8-e61a-42f7-b409-87f45c2920f6" />
+<img width="399" height="212" alt="image" src="https://github.com/user-attachments/assets/cada608b-819b-4c5a-bd14-5f43b7ea0985" />
+<img width="274" height="72" alt="image" src="https://github.com/user-attachments/assets/1fffbab0-50d1-41f9-815d-66dc53cc5fe5" />
+
+
 
 ## Задание 4. HashSet
 
@@ -60,7 +70,10 @@
 
 ### Тестирование
 
-Программа корректно находит и выводит в алфавитном порядке только звонкие согласные, встречающиеся в тексте. Добавлена проверка существования файла.
+<img width="199" height="94" alt="image" src="https://github.com/user-attachments/assets/07695bd2-a6fb-44dc-99d5-bbf8c4998f2f" />
+<img width="204" height="84" alt="image" src="https://github.com/user-attachments/assets/50f26ab6-c042-439e-b388-b2a86a07d0e4" />
+
+
 
 ## Задание 5. Dictionary
 
@@ -74,7 +87,9 @@
 
 ### Тестирование
 
-Логины формируются правильно. Реализована проверка длины фамилии (≤ 20) и имени (≤ 15), а также проверка, что строка состоит только из букв. Добавлена защита от отсутствия файла и некорректных строк.
+<img width="307" height="704" alt="image" src="https://github.com/user-attachments/assets/a4ebd21a-f773-4f35-9699-2d14d494903d" />
+![Uploading image.png…]()
+
 
 ## Задание 6. Класс Time + перегрузка оператора
 
