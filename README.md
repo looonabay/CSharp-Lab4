@@ -106,4 +106,5 @@
 ### Тестирование
 
 <img width="371" height="558" alt="image" src="https://github.com/user-attachments/assets/0e22c78a-2ebc-40aa-96c9-b3bbcd853524" />
-![Uploading image.png…]()
+<img width="371" height="558" alt="image" src="https://github.com/user-attachments/assets/e78c9e21-a3c3-46d7-bd0d-cf20b1c88b07" />
+
