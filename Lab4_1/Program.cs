@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Lab4;
 
@@ -7,7 +7,6 @@ internal class Program
     private static void Main(string[] args)
     {
         Checked check = new Checked();
-        Tasks tasks = new Tasks();
 
         Console.WriteLine("Введите номер задания 1 - 5:");
         int choice = check.ReadInt("Номер задания:");
@@ -16,12 +15,42 @@ internal class Program
         {
             case 1:
                 Console.WriteLine("Задание 1");
-                Tasks.Task1(check);
+                Console.WriteLine("Выберите тип элементов:");
+                Console.WriteLine("1 — целые числа");
+                Console.WriteLine("2 — вещественные числа");
+                Console.WriteLine("3 — строки");
+
+                int type1 = check.ReadInt("Ваш выбор:");
+
+                if (type1 == 1)
+                    Tasks.Task1<int>(check);
+                else if (type1 == 2)
+                    Tasks.Task1<double>(check);
+                else if (type1 == 3)
+                    Tasks.Task1<string>(check);
+                else
+                    Console.WriteLine("Такого типа нет.");
+
                 break;
 
             case 2:
                 Console.WriteLine("Задание 2");
-                Tasks.Task2(check);
+                Console.WriteLine("Выберите тип элементов:");
+                Console.WriteLine("1 — целые числа");
+                Console.WriteLine("2 — вещественные числа");
+                Console.WriteLine("3 — строки");
+
+                int type2 = check.ReadInt("Ваш выбор:");
+
+                if (type2 == 1)
+                    Tasks.Task2<int>(check);
+                else if (type2 == 2)
+                    Tasks.Task2<double>(check);
+                else if (type2 == 3)
+                    Tasks.Task2<string>(check);
+                else
+                    Console.WriteLine("Такого типа нет.");
+
                 break;
 
             case 3:
