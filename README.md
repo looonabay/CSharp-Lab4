@@ -11,13 +11,12 @@
 
 ### Алгоритм решения
 
-Создаётся обобщённый список List<T>. Пользователь выбирает тип данных, вводит количество элементов и сами элементы. Затем вводится значение E. Список проходится с конца, и все элементы, равные E, удаляются методом RemoveAt. После этого получившийся список выводится на экран и возвращается из метода.
+Создаётся обобщённый список `List<T>`. Пользователь выбирает тип данных, вводит количество элементов и сами элементы. Затем вводится значение E. Список проходится с конца, и все элементы, равные E, удаляются методом `RemoveAt`. После этого получившийся список выводится на экран и возвращается из метода.
 
 ### Тестирование
 
-<img width="624" height="856" alt="image" src="https://github.com/user-attachments/assets/7ece99c0-db72-42b0-a186-8d053ec5722f" />
-
-<img width="457" height="279" alt="image" src="https://github.com/user-attachments/assets/e1517f47-3148-4ff7-bb53-d1288d7f073c" />
+<img width="334" height="630" alt="image" src="https://github.com/user-attachments/assets/11c3662d-e345-44c3-9bcc-9eb5e6a57d07" />
+<img width="450" height="558" alt="image" src="https://github.com/user-attachments/assets/90fcdc67-dccd-433f-813c-53ff774488a4" />
 
 
 
@@ -29,12 +28,13 @@
 
 ### Алгоритм решения
 
-Создаётся двусвязный список `LinkedList<int>`. Элементы добавляются методом `AddLast`. Для вывода в обратном порядке используется свойство `Last` и переход по ссылке `Previous` до начала списка.
+Создаётся обобщённый двусвязный список `LinkedList<T>`. Пользователь выбирает тип данных, вводит количество элементов и сами элементы. Для вывода в обратном порядке используется свойство `Last` и переход к предыдущим элементам с помощью `Previous`. Полученные элементы добавляются в отдельный список `List<T>`, который выводится на экран и возвращается из метода.
 
 ### Тестирование
 
-<img width="306" height="341" alt="image" src="https://github.com/user-attachments/assets/d58cc948-693c-40e5-bc38-646ead2353d2" />
-<img width="459" height="226" alt="image" src="https://github.com/user-attachments/assets/9b7ab25f-530c-4a2a-a27b-4d2b747356c9" />
+<img width="322" height="548" alt="image" src="https://github.com/user-attachments/assets/bb3de171-a198-4760-9a05-0befea09fd41" />
+<img width="452" height="606" alt="image" src="https://github.com/user-attachments/assets/ef0dcbb4-2a4e-472c-88d6-6b047be72519" />
+
 
 
 ## Задание 3. HashSet
