@@ -145,6 +145,50 @@ public class Checked
         }
     }
     
+    // Ввод элемента выбранного типа
+    public T ReadElement<T>(string promt) where T : IParsable<T>
+    {
+        Console.WriteLine(promt);
+        string? input = Console.ReadLine();
+        T value;
+
+        while (true)
+        {
+            if (string.IsNullOrWhiteSpace(input))
+            {
+                Console.WriteLine("Ошибка ввода! Нельзя вводить пустую строку.");
+            }
+            else if (typeof(T) == typeof(string) && HasDigit(input))
+            {
+                Console.WriteLine("Ошибка! В строке не должно быть цифр.");
+            }
+            else if (T.TryParse(input, null, out value))
+            {
+                return value;
+            }
+            else
+            {
+                Console.WriteLine("Ошибка ввода! Некорректное значение.");
+            }
+
+            input = Console.ReadLine();
+        }
+    }
+    
+    // Проверка наличия цифр в строке
+    private bool HasDigit(string input)
+    {
+        for (int i = 0; i < input.Length; i++)
+        {
+            if (char.IsDigit(input[i]))
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+    
     // проверка для значений в определенном промежутке 
     public int ReadGrade(string prompt)
     {
@@ -157,8 +201,8 @@ public class Checked
         }
         return value;
     }
-
-
+    
+    
     // Проверка имени и фамилии для 5 задания 
     internal static bool IsValidName(string value, int maxLength) 
     {
